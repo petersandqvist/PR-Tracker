@@ -1,0 +1,23 @@
+@mixin breakpoint($class) {
+    @if $class == sm {
+        @media (min-width: 580px) {
+            @content;
+        }
+    } @else if $class == md {
+        @media (min-width: 800px) {
+            @content;
+        }
+    } @else if $class == lg {
+        @media (min-width: 1056px) {
+            @content;
+        }
+    } @else if $class == xl {
+        @media (min-width: 1232px) {
+            @content;
+        }
+    } @else if $class == xxl {
+        @media (min-width: 1472px) {
+            @content;
+        }
+    }
+}

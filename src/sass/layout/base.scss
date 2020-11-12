@@ -1,0 +1,29 @@
+body {
+    font-family: var(--font__regular);
+    color: #333;
+    line-height: 1.5;
+    background-color: var(--color__primary--gray);
+}
+
+a:link {
+    color: var(--color__primary--blue);
+
+    &:visited {
+        color: var(--color__primary--blue);
+    }
+
+    &:hover {
+        color: var(--color__accent--gray);
+    }
+
+    &:active {
+        color: var(--color__primary--blue);
+    }
+}
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+    display: none;
+}

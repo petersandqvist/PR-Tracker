@@ -1,0 +1,5 @@
+@import "../../sass/mixins/_button-reset.scss";
+
+.button {
+    @include button-reset;
+}

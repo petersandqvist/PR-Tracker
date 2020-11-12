@@ -1,0 +1,53 @@
+@mixin grid-item($start, $end, $hAlign: left, $vAlign: top) {
+    @if ($start < 1 or $end > 12) {
+        @error "Start value must be larger than 1 and end value must be lesser than 12";
+    }
+
+    @if ($start == 1) {
+        grid-column-start: $start;
+    } @else {
+        grid-column-start: $start + 1;
+    }
+
+    @if ($end == 1) {
+        grid-column-end: $end;
+    } @else {
+        grid-column-end: $end + 1;
+    }
+
+    @if ($hAlign == "left") {
+        justify-self: start;
+    }
+
+    @if ($hAlign == "center") {
+        justify-self: center;
+    }
+
+    @if ($hAlign == "right") {
+        justify-self: end;
+    }
+
+    @if ($hAlign == "stretch") {
+        justify-self: stretch;
+    }
+
+    @if ($vAlign == "top") {
+        align-self: start;
+    }
+
+    @if ($vAlign == "stretch") {
+        align-self: stretch;
+    }
+
+    @if ($vAlign == "center") {
+        align-self: center;
+    }
+
+    @if ($vAlign == "bottom") {
+        align-self: end;
+    }
+
+    @if ($vAlign == "stretch") {
+        align-self: stretch;
+    }
+}
