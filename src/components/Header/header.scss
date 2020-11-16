@@ -1,0 +1,16 @@
+@import "../../sass/layout/grid.scss";
+@import "../../sass/mixins/breakpoints";
+@import "../../sass/mixins/container";
+@import "../../sass/mixins/grid-item";
+
+.header-content {
+    @include container(false);
+    display: flex;
+    justify-content: center;
+    padding-top: 2rem;
+
+    svg {
+        height: 2rem;
+        width: 2rem;
+    }
+}

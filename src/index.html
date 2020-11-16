@@ -5,10 +5,29 @@
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="theme-color" content="#000000" />
         <meta name="description" content="" />
-        <title></title>
+        <title>PR Tracker</title>
     </head>
     <body>
-        <noscript>You need to enable JavaScript to run this app.</noscript>
-        <main id="root"></main>
+        <main id="root">
+            <header>
+                <div class="header-content">
+                    <h1>Track your PRs</h1>
+                    <svg>
+                        <use
+                            xlink:href="./static/icons/remixicon.symbol.svg#ri-flashlight-line"
+                        ></use>
+                    </svg>
+                </div>
+            </header>
+            <div class="wrapper__main--section grid">
+                <div class="col">
+                    <form><input />Input</form>
+                    <button>Submit</button>
+                </div>
+                <div class="col">
+                    <div id="output"></div>
+                </div>
+            </div>
+        </main>
     </body>
 </html>

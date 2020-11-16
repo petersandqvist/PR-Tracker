@@ -1,0 +1,30 @@
+@import "../../sass/layout/grid.scss";
+@import "../../sass/mixins/breakpoints";
+@import "../../sass/mixins/container";
+@import "../../sass/mixins/grid-item";
+
+.wrapper__main--section {
+    @include container(false);
+    display: flex;
+    justify-content: center;
+
+    > .col {
+        @include grid-item(1, 12);
+
+        @include breakpoint(md) {
+            @include grid-item(1, 8);
+        }
+
+        input {
+            margin-right: 2rem;
+        }
+    }
+
+    > .col:last-of-type {
+        @include grid-item(1, 12);
+
+        @include breakpoint(md) {
+            @include grid-item(4, 12);
+        }
+    }
+}
